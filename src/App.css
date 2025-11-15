@@ -1,0 +1,201 @@
+.app-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.app-container h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.editor-wrapper {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.controls-panel {
+  flex: 0 0 350px;
+  background: #1a1a1a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  max-height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.control-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #333;
+}
+
+.control-section:last-child {
+  border-bottom: none;
+}
+
+.control-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #646cff;
+  font-size: 1.2em;
+}
+
+.control-section label {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 0.9em;
+}
+
+.control-section input[type="text"],
+.control-section input[type="number"],
+.control-section input[type="color"],
+.control-section input[type="file"],
+.control-section select {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background: #2a2a2a;
+  color: rgba(255, 255, 255, 0.87);
+  font-family: inherit;
+  font-size: 0.9em;
+}
+
+.control-section input[type="color"] {
+  height: 40px;
+  cursor: pointer;
+}
+
+.control-section input[type="file"] {
+  padding: 0.25rem;
+  cursor: pointer;
+}
+
+.control-section input[type="file"]::file-selector-button {
+  padding: 0.5rem 1rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #646cff;
+  background: #646cff;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.control-section input[type="file"]::file-selector-button:hover {
+  background: #535bf2;
+}
+
+.logo-preview {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #2a2a2a;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.svg-preview {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.svg-preview svg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  touch-action: none;
+}
+
+.hint {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9em;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .editor-wrapper {
+    flex-direction: column;
+  }
+
+  .controls-panel {
+    flex: 1;
+    width: 100%;
+    max-height: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  .app-container h1 {
+    font-size: 2em;
+    margin-bottom: 1rem;
+  }
+
+  .controls-panel {
+    padding: 1rem;
+  }
+
+  .control-section {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .control-section h3 {
+    font-size: 1em;
+  }
+
+  .svg-preview svg {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hint {
+    font-size: 0.8em;
+    text-align: center;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .controls-panel {
+    background: #f9f9f9;
+  }
+
+  .control-section {
+    border-bottom-color: #ddd;
+  }
+
+  .control-section h3 {
+    color: #535bf2;
+  }
+
+  .control-section label {
+    color: #213547;
+  }
+
+  .control-section input[type="text"],
+  .control-section input[type="number"],
+  .control-section input[type="color"],
+  .control-section input[type="file"],
+  .control-section select {
+    border-color: #ccc;
+    background: #fff;
+    color: #213547;
+  }
+
+  .logo-preview {
+    background: #fff;
+  }
+
+  .hint {
+    color: #666;
+  }
+}

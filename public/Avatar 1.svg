@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" data-name="Layer 1" viewBox="0 0 1281 1281">
+  <title>Layout</title>
+  <path id="background" style="fill:#998675" d="M.5.5h1280v1280H.5z"/>
+  <image width="601" height="600" transform="translate(340 211.13)" xlink:href="https://pub-0fb0d577adfe4917a76fe1d7f5297aab.r2.dev/LOGO.png"/>
+  <text id="branding" transform="translate(177.53 946.87)" style="font-size:100px;font-family:ArialMT,Arial;fill:#ebebeb">TEN THUONG HIEU</text>
+  <text id="slogan" transform="translate(375.44 1054.87)" style="font-family:ArialMT,Arial;font-size:60px;fill:#ebebeb">SLOGAN CUA BAN</text>
+</svg>
